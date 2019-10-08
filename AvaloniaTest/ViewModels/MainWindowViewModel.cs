@@ -30,7 +30,7 @@ namespace AvaloniaTest.ViewModels
         private void RunCmdProc()
         {
             Console.WriteLine("Button Click");
-            string path = $"{Path.GetDirectoryName(Assembly.GetEntryAssembly().Location)}\\Assets\\noimage.jpg";
+            string path = $"{Path.GetDirectoryName(Assembly.GetEntryAssembly().Location)}/Assets/noimage.jpg";
 
             Console.WriteLine(path);
             try
