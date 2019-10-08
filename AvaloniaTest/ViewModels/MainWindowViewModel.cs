@@ -31,10 +31,19 @@ namespace AvaloniaTest.ViewModels
         {
             Console.WriteLine("Button Click");
             string path = $"{Path.GetDirectoryName(Assembly.GetEntryAssembly().Location)}\\Assets\\noimage.jpg";
-            Mat img = new Mat(path);
-            var bmp = img.ToMemoryStream();
-            Bitmap t = new Bitmap(bmp);
-            ImageSrc = t;
+
+            Console.WriteLine(path);
+            try
+            {
+                Mat img = new Mat(path);
+                var bmp = img.ToMemoryStream();
+                Bitmap t = new Bitmap(bmp);
+                ImageSrc = t;
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
         }
 
         public string Greeting => "Welcome to Avalonia!";
