@@ -29,5 +29,6 @@
     <PackageReference Include="Avalonia.Gtk" Version="0.5.1" />
     <PackageReference Include="Avalonia.ReactiveUI" Version="0.8.0" />
     <PackageReference Include="OpenCvSharp3-AnyCPU" Version="4.0.0.20181129" />
+    <PackageReference Include="OpenCvSharp4.runtime.ubuntu.18.04-x64" Version="4.1.0.20190416" />
   </ItemGroup>
 </Project>
